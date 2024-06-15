@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------------varibles--------*/
+:root{
+    --mymaincolor: rgb(98, 98, 98);
+    --mymaincolor1: rgb(186, 54, 186);
+    --mymaincolorhover:rgb(178, 236, 242);
+    
+}
+
+
+/*---------------start nav bar------*/
+.navbar{
+    background-image: url("blue_bg.png");
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.navleft{
+    margin: 20px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navleft a{
+    padding: 5px 10px;
+    margin: 20px;
+    text-decoration: none;
+    color: var(--mymaincolor);
+}
+.navleft a:hover{
+    background-color:var(--mymaincolorhover);
+    color: black;
+    border-radius: 15%;
+}
+.navright{
+    margin: 20px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navright button{
+    font-size: 15px;
+    padding: 5px 30px;
+    border-radius: 40% ;
+    border: none;
+    background-color: white ;
+    color: var(--mymaincolor);
+}
+.navright button:hover{
+    background-color:var(--mymaincolorhover);
+    color: black;
+}
+/*----------end nav bar----*/
+/* start media query for nav bar size s ( 576 px) screen*/
+@media only screen and (min-width:300px) and (max-width:576px){
+    .navbar {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .navleft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navright{
+        margin: 40px;
+    }
+}
+/*-----end navbar for media query-----*/
+/*----------start header---*/
+.header{
+    display: flex;
+    justify-content: end;
+    align-items:start;
+    position: relative;
+}
+.headtext{
+    max-width: 90%;
+    padding: 10%;
+}
+.headtext h1{
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--mymaincolor);
+
+}
+.headtext a{
+    color: rgb(186, 54, 186);
+    text-decoration: none;
+}
+.headtext p{
+    color: gray;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headpic img{
+    max-width: 30%;
+    z-index: 1;
+    position: absolute;
+    bottom:150px; 
+       
+}
+.hp2{
+    max-width: 600px;
+    position: absolute;
+    right: 130px;
+    top: 200px;
+    z-index: -1;
+}
+.hp3{
+    max-width: 300px;
+    position: absolute;
+    right: 350px;
+    bottom: 100px;
+    z-index: 2;
+}
+.hp4{
+    max-width: 70%;
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+    z-index: 2;
+}
+
+/*------------end header-------*/
+/* start media query for header size s ( 576 px) screen*/
+@media only screen and (min-width:300px) and (max-width:576px){
+    .headtext{
+        max-width: 80%;
+        padding: 10%;
+    }
+    .headtext h1{
+        font-size: 15px;
+    }
+    .headtext p{
+        color: gray;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .headpic img{
+        max-width: 15%;
+        z-index: 1;
+        position: absolute;
+        bottom:80px; 
+        left:40%;
+    }
+    .hp2{
+        max-width: 100px;
+        position: absolute;
+        right: 150px;
+        top: 460px;
+        z-index: -1;
+    }
+    .hp3{
+        max-width: 70px;
+        position: absolute;
+        right: 170px;
+        bottom: 240px;
+        z-index: 2;
+    }
+    .hp4{
+        display: none;
+    }
+}
+/*----------end media query for header------*/
+/*-----------start middle-----*/
+.mid1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 25%;
+    
+}
+.mid1 img{
+    max-width: 200px;
+}
+.mid1 h3{
+    color: var(--mymaincolor);
+}
+.mid1 p{
+    color: gray;
+}
+.bigmid{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+.pc {
+    position: relative;
+}
+.pc img{
+    max-width: 850px;
+    position: absolute;
+    left: 25%;
+    top: 50px;
+}
+.one{
+    margin-bottom: 12%;
+    margin-left: 10%;
+}
+.two{
+    z-index: 1;
+}
+.three{
+    margin-top: 30%;
+    margin-right: 10%;
+}
+.mix img{
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+}
+.mix h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    left: 270px;
+    top:1350px;
+    z-index: 2;
+}
+.mix h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 270px;
+    top:1380px;
+    z-index: 2;
+}
+/*------------end section 1-----*/
+/* start section 1 for media query size S (576px ) screen */
+@media only screen and (min-width: 300px) and (max-width:576px){
+    .mid1 img{
+        max-width: 70px;
+    }
+    .mid1 h3{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .mid1 p{
+        font-size: 15px;
+    }
+    .pc img{
+        max-width: 250px;
+        position: absolute;
+        top: 5px;
+    }
+    .mix img{
+        max-width: 100px;
+        position: absolute;
+        top: 1100px;
+        left: 60px;
+    }
+    .mix h4{
+        font-size: 9px;
+        position: absolute;
+        left: 85px;
+        top:1120px;
+        z-index: 2;
+    }
+    .mix h1{
+        font-size: 13px;
+        position: absolute;
+        left: 80px;
+        top:1130px;
+        z-index: 2;
+    }
+}
+/*--------end media query for section 1 ---------*/
+/*------------start section 2-----*/
+.part2{
+    margin: auto;
+    text-align: center;
+}
+.ripc{
+    max-width: 300px;
+    padding: 10px;
+}
+.lepc{
+    max-width: 500px;
+    margin-top: 20%;
+    padding: 10px;
+}
+.complex i{
+    color: var(--mymaincolor);
+    padding: 10px;
+}
+.text{
+    max-width: 20%;
+    text-align: center;
+    margin: auto;
+}
+.text h2{
+    color: var(--mymaincolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text p{
+    color: gray;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+/*---------end section 2----*/
+/* start section 2 for media query size S (576px ) screen */
+@media only screen and (min-width:300px) and (max-width:576px){
+    .ripc{
+        max-width: 100px;
+        padding: 5px;
+    }
+    .lepc{
+        max-width: 100px;
+        margin-top: 20%;
+        padding: 5px;
+    }
+    .text{
+        max-width: 50%;
+    }
+    .text h2{
+       font-size: 15px;
+    }
+    .text p{
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+/*-------End media query section 2--*/
+/*--------start footer-----*/
+.thelast{
+    background-image: url("Group\ 1131.png");
+    background-size: cover;
+    height: 600px;
+}
+.last{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.buttonle{
+    position: absolute;
+    top: 140px;
+    right: 110px;
+
+    
+}
+.buttonle img{
+    max-width: 690px;
+} 
+.buttonri{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top:370px;
+    left: 90px;
+
+}
+.buttonri a{
+    text-decoration: none;
+    margin-left:5px ;
+    
+}
+.buttonri h4{
+    color: gray;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5px;
+}
+.buttonri h2{
+    color: var(--mymaincolor);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.but1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10%;
+}
+.navicon i{
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    transition: all 1s ease;
+}
+.navicon i:hover{
+    color: var(--mymaincolor1);
+    transform: scale(1.3);
+
+
+}
+.fin{
+    position: relative;
+}
+.navicon{
+    position: absolute;
+    top:480px;
+    left: 95px;
+}
+.navlast a {
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    transition: all 1s ease;
+ 
+}
+.navlast a:hover{
+    background-color: var(--mymaincolor1);
+    padding: 5px 10px;
+    border-radius: 10%;
+    transform: scale(1.1);
+}
+.navlast{
+    position: absolute;
+    top:560px;
+    left: 80px;
+}
+/*-------------end footer------*/
+/* start footer for media query size S (576px ) screen */
+@media only screen and (min-width:300px) and (max-width:576px) {
+    .thelast{
+        background-image: url("Group\ 1131.png");
+        background-size: cover;
+        height: 180PX;
+    }
+    .buttonle{
+        position: absolute;
+        top: 80px;
+        right: 50px;        
+    }
+    .buttonle img{
+        max-width: 150px;
+    } 
+    .buttonri{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        position: absolute;
+        top:100px;
+        left: 0;
+    
+    }
+    .but1 img{
+        max-width: 15px;
+    }
+    .buttonri h4{
+        font-size: 5px;
+    }
+    .buttonri h2{
+        font-size: 7px;
+    }
+    .but1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 2px 2px;
+        border-radius: 10%;
+    }
+    .navicon i{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .navicon{
+        position: absolute;
+        top:150px;
+        left: 10px;
+    }
+    .navlast a {
+        font-size: 9px;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+    }
+    .navlast a:hover{
+        padding: 1px ;
+    }
+    .navlast{
+        position: absolute;
+        top:130px;
+        left: 170px;
+    }
+}
+/*--------- end media query for footer--*/
+    
+
+
